@@ -41,7 +41,7 @@
         $link.append('<p class="repo__desc">' + getRepoDesc(repo) + '</p>');
 
        // $.getJSON('https://api.github.com/repos/' + orgName + '/' + repo.name + '/collaborators?callback=?', function (result) {
-        $.getJSON('https://api.github.com/orgs/' + orgName + '/members?callback=?', function (result) {
+        $.getJSON('https://api.github.com/orgs/' + orgName + '/' + repo.name + '/watchers?callback=?', function (result) {
             var collaborators = result.data;
             $.each(collaborators, function (i, collaborator) {
                  $facepile.append($('<img src="' + collaborator.avatar_url + '" title="' + collaborator.login + '" alt="' + collaborator.login + '">'));
