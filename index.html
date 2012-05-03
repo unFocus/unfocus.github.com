@@ -1,11 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-                <title>unFocus</title>
+        <title>unFocus &hearts; Open Source</title>
+        <meta name="description" content="Find all the unFocus github projects in one place.">
+        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
-        <p>Hello github!</p>
+        <div class="grid">
+            <div class="unit-1-3 site-header">
+                <div class="box">
+                    <div class="site-logo">
+                        <h1>unFocus Projects</h1>
+                    </div>
+                    <h2>A bunch of (two) people creating open source software. Directly copied from h5bp.github.com (in turn, was adapted from twitter.github.com)!</h2>
+                    <p class="stats">
+                        <a href="https://github.com/unFocus/repositories"><b id="num-repos">View</b> public repos</a>
+                        <br>
+                        <a href="https://github.com/unFocus"><b id="num-members">View</b> members</a>
+                    </p>
+                    <h3>Recently updated</h3>
+                    <ol id="updated-repos"></ol>
+                    <a class="twitter-share-button"
+                       href="http://twitter.com/share"
+                       data-text="All the unFocus github projects in one place"
+                       data-url="http://unfocus.github.com/"
+                       data-via="unFocus"
+                       data-count="none"
+                       target="_blank">Tweet</a>
+                    <a class="twitter-follow-button"
+                        href="https://twitter.com/unFocusProjects" 
+                        data-show-count="false" 
+                        data-lang="en" 
+                        data-count="none">Follow @unFocusProjects</a>
+
+                </div>
+            </div>
+
+            <div class="site-content" id="repos"></div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/jquery-1.7.1.min.js"><\/script>')</script>
+        <script src="assets/app.js"></script>
     </body>
 </html>
